@@ -1,6 +1,6 @@
 natanel-project
 ===============
 
-<h1>jce - end - project</h1>
+<h2>jce - end - project</h2>
 
-<h1>here I will add all the project files</h1>
+<h2>here I will add all the project files</h2>
