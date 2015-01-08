@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript" src="script.js"></script>
+<script language="javascript" src="onCreate.js"></script>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="phoneBookPage"  data-theme="a">
+
+
+	<div data-role="header" data-position = "fixed">
+    <div data-role="navbar" data-position = "fixed">
+      <ul>
+		<li><a style="background: CadetBlue; color: white; href="#" id = "main" onclick = "goToPage(id)">Main</a></li>
+		<li><a style="background: CadetBlue; color: white; href="#" id = "users" onclick = "goToPage(id)">Users</a></li>
+        <li><a style="background: CadetBlue; color: white; href="#" id = "userPage" onclick = "goToPage(id)">My Page</a></li>
+      </ul>
+	</div>
+	</div>
+	
+	<!--Menu panel-->
+	<div data-role="panel" id="overlayPanel" data-display="push" > 
+			<center><h2>Menu</h2></center>
+		<div data-role="controlgroup" data-type="vertical">
+		  <a href="#" class="ui-btn">Settings</a>
+		  <a href="#" class="ui-btn">Contact us</a>
+		  <a href="#" class="ui-btn" onclick = "close_window()">Exit</a>
+		</div>	
+	</div> 
+	
+	
+    <div data-role="collapsibleset" data-collapsed="true" data-collapsed-icon ="phone" data-expanded-icon = "phone">
+	  <div data-role="collapsible">
+		<h1>Phone number 1</h1>
+		<p>02-2583696</p>
+	  </div>
+	  <div data-role="collapsible">
+		<h1>Phone number 2</h1>
+		<p>03-6543112</p>
+	  </div>
+	</div>
+	
+	
+	
+	<div data-role="main" class="ui-content" >
+    <div data-role="popup" id="myPopupDialogNoPhone" data-position-to="window">
+      <div data-role="header">
+	  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <h1>No Number?</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <h5>Please enter department name:</h5>
+         <div data-role="fieldcontain">
+				<textarea name="textarea" id="textarea" ></textarea>		
+			</div>
+			<h6>We will check phone number and contact you!</h6>
+        <button data-theme="b">Send</button>
+      </div>
+
+      <div data-role="footer">
+        <h1>     </h1>
+      </div>
+    </div>
+  </div>
+	
+		<div data-role="footer" data-position = "fixed">   
+						
+			<div data-role="navbar">
+			<ul>
+				<li><a style="background: CadetBlue; color: white; href="#myPopupDialogNoPhone" data-rel="popup">No Number?</a></li>
+				<li><a style="background: CadetBlue; color: white; href="#overlayPanel">Menu</a></li>
+			</ul>
+			</div>	
+		</div>
+	</div>
+	</body>
+</html>

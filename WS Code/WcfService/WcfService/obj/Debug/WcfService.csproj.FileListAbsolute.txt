@@ -1,0 +1,1 @@
+c:\users\sergeyk\documents\visual studio 2013\Projects\WcfService\WcfService\obj\Debug\WcfService.csprojResolveAssemblyReference.cache

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript" src="script.js"></script>
+<script language="javascript" src="onCreate.js"></script>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+
+
+<div data-role="page" id="mainPage" data-theme="a">
+	<div data-role="header" data-position = "fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a style="background: CadetBlue; color: white;" href="#" id = "main" onclick = "goToPage(id)">Main</a></li>
+        <li><a style="background: CadetBlue; color: white;" href="#" id ="users" onclick = "goToPage(id)">Users</a></li>
+        <li><a style="background: CadetBlue; color: white;" href="#" id = "phoneBook" onclick = "goToPage(id)">Phone Book</a></li>
+      </ul>
+	
+	</div>
+	</div>
+	<div data-role="panel" id="overlayPanel" data-display="push"> 
+		<center><h2>Menu</h2></center>
+		 <div data-role="controlgroup" data-type="vertical">
+      <a href="#" class="ui-btn">Settings</a>
+      <a href="#" class="ui-btn">Contact us</a>
+      <a href="#" class="ui-btn">Exit</a>
+	 
+    </div>
+		
+	</div> 
+	
+	
+	<div data-role="footer" data-position = "fixed">   
+					
+		<div data-role="navbar">
+		<ul>
+			<li><a style="background: CadetBlue; color: white;" href="#">Update</a></li>
+			<li><a style="background: CadetBlue; color: white;" href="#overlayPanel">Menu</a></li>
+		</ul>
+		</div>	
+	</div>
+</div>
+	</body>
+	</html>

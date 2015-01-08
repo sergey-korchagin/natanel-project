@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript" src="script.js"></script>
+<script language="javascript" src="onCreate.js"></script>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="main" class="ui-content" >
+    <form name="login" method="post" action="demoform.asp">
+      <div class="ui-field-contain">
+        <label for="fullname">User name:</label>
+        <input type="email" name="fullname" id="fullname" placeholder="yourname@gov.il">       
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password" placeholder="Least 7 digits">
+      </div>
+	  <center>
+	  <a style="background: CadetBlue; color: white;" id = "Submit" onclick = "return submitForm()"  href="#" data-rel="popup" data-position-to="window" data-transition="fade"  class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Submit</a>
+	  <a style="background: CadetBlue; color: white;" id = "newUser" onclick = "goToPage(id)"  href="#" data-rel="popup" data-position-to="window" data-transition="fade"  class="ui-btn ui-corner-all ui-shadow ui-btn-inline">New</a>
+	  <a style="background: CadetBlue; color: white;"  href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Forgot?</a>
+	  </center>
+   </form>
+  </div>
+
+ 
+ 
+	<div data-role="main" class="ui-content" >
+    <div data-role="popup" id="myPopupDialog" data-position-to="window">
+      <div data-role="header">
+	  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <h1>Password</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>Please enter your e-mail:</p>
+        <input type="email"  id="emailForgot" placeholder="yourname@gov.il">
+		<h6>You will receive a new password by mail in a few minutes</h6>
+        <button data-theme="b">Send</button>		  
+      </div>
+      <div data-role="footer">
+        <h1>     </h1>
+      </div>
+    </div>
+  </div>
+ 
+</div> 
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript" src="script.js"></script>
+<script language="javascript" src="onCreate.js"></script>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+<div data-role="header" data-position = "fixed">
+ <div data-role="navbar" data-position = "fixed">
+      <ul>
+        <li><a style="background: CadetBlue; color: white; href="#" id = "main" onclick = "goToPage(id)">Main</a></li>
+        <li><a style="background: CadetBlue; color: white; href="#" id ="userPage" onclick = "goToPage(id)">My page</a></li>
+        <li><a style="background: CadetBlue; color: white; href="#" id = "phoneBook" onclick = "goToPage(id)">Phone Book</a></li>
+      </ul>
+	</div>
+</div>
+  <div data-role="main" class="ui-content">
+   <center><h2>Find user</h2></center>
+    <form class="ui-filterable">
+      <input id="myFilter" data-type="search" placeholder = "Please enter user name">
+    </form>
+    <ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
+      <li><a href="#">Adele</a></li>
+      <li><a href="#">Agnes</a></li>
+      <li><a href="#">Albert</a></li>
+      <li><a href="#">Billy</a></li>
+      <li><a href="#">Bob</a></li>
+      <li><a href="#">Calvin</a></li>
+      <li><a href="#">Cameron</a></li>
+      <li><a href="#">Chloe</a></li>
+      <li><a href="#">Christina</a></li>
+      <li><a href="#">Diana</a></li>
+      <li><a href="#">Gabriel</a></li>
+      <li><a href="#">Glen</a></li>
+      <li><a href="#">Ralph</a></li>
+      <li><a href="#">Valarie</a></li>
+    </ul>
+  </div>
+  
+  
+  <div data-role="panel" id="overlayPanel" data-display="push"> 
+		<center><h2>Menu</h2></center>
+		 <div data-role="controlgroup" data-type="vertical">
+      <a href="#" class="ui-btn">Settings</a>
+      <a href="#" class="ui-btn">Contact us</a>
+      <a href="#" class="ui-btn">Exit</a>
+	 
+    </div>
+		
+		<div data-role="main" class="ui-content" >
+    <div data-role="popup" id="myPopupDialogNoUser" data-position-to="window">
+      <div data-role="header">
+	  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <h1>No user?</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>Please enter user name:</p>
+         <div data-role="fieldcontain">
+				<textarea name="textarea" id="textarea" ></textarea>		
+			</div>
+			<h6>We will check if user exists and contact you!</h6>
+        <button data-theme="b">Send</button>
+      </div>
+
+      <div data-role="footer">
+        <h1>     </h1>
+      </div>
+    </div>
+  </div>
+		
+		
+	</div> 
+  <div data-role="footer" data-position = "fixed">   
+					
+		<div data-role="navbar">
+		<ul>
+			<li><a style="background: CadetBlue; color: white; href="#myPopupDialogNoUser" data-rel="popup">No User?</a></li>
+			<li><a style="background: CadetBlue; color: white; href="#overlayPanel">Menu</a></li>
+		</ul>
+		</div>	
+	</div>
+  
+</div> 
+
+</body>
+</html>
