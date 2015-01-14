@@ -8,7 +8,7 @@ natanel-project
 <p>
 <a href="https://github.com/sergey-korchagin/natanel-project/tree/master/WS%20Code/WcfService">WS Code</a>
 <p>
-<a href="https://github.com/sergey-korchagin/natanel-project/tree/master/Doc%20Files">Files</a>
+<a href="https://github.com/sergey-korchagin/natanel-project/tree/master/Doc%20Files">Documents</a>
 <p>
 <a href="https://github.com/sergey-korchagin/natanel-project/tree/master/icon's">Icons</a>
 
