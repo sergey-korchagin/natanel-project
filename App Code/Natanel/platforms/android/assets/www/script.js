@@ -22,7 +22,6 @@ else{
 }	
 }
 
-	// $('#popupAddMess').popup("close");
 
 /*
  * navigate between pages function
@@ -41,4 +40,38 @@ function close_window() {
     if (confirm("Exit from application?")) {
         navigator.app.exitApp();
     }
+}
+	function localJsonpCallback(json) {
+  console.log(json);
+    }
+
+	//New user 
+	function newUserFunc(){
+	var mail = document.forms["newUserForm"]["userMail"].value;
+	var pwd = document.forms["newUserForm"]["userPassword"].value;
+	var subpwd = document.forms["newUserForm"]["userSubPassword"].value;
+	var name = document.forms["newUserForm"]["userName"].value;
+	var secName = document.forms["newUserForm"]["userSecondName"].value;				
+	var phone = document.forms["newUserForm"]["userPhone"].value;
+	
+	// if(mail.indexOf('@') <= 0){
+		// alert('Incorrect email');
+	// }else if(mail.indexOf('gov.il')<=0){
+		// alert('only gov.il email');
+	// }else if(pwd.length <7 || subpwd < 7){
+		// alert("password must contain at least 7 digits")
+	// }else if(pwd != subpwd){
+		// alert('passwords not equals');
+	// }else if(!isFinite(String(phone)) || phone.length<9){
+		// alert('incorrect phone number');
+	// }else{
+		 
+var client = new WindowsAzure.MobileServiceClient(
+    "https://natanel.azure-mobile.net/",
+    "mIStGsJbknpIIMIPWipAlqOnvbUSys14"
+);
+	var item = { email: mail, pwd: pwd, sub_pwd: subpwd, first_name: name, last_name: secName, phone: phone};
+client.getTable("Item").insert(item);
+
+	
 }

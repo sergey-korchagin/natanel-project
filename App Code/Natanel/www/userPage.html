@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script language="javascript" src="script.js"></script>
-<script language="javascript" src="onCreate.js"></script>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+<script language="javascript" src="script.js"></script>
+<script language="javascript" src="scrUsPage.js"></script>
+<script language="javascript" src="md5.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
 </head>
 <body>
 
@@ -33,14 +34,22 @@
     </div>
 		
 	</div> 
+	<div id="userData">
+	<center><h2>User Info</h2></center>
+		<input type="text" id="email">
+		<input type="text" id="name">
+		<input type="text" id="lastname">
+		<input type="text" id="phone">
+	</div>
+	
 	
 	
 	<div data-role="footer" data-position = "fixed">   
 					
 		<div data-role="navbar">
 		<ul>
-			<li><a style="background: CadetBlue; color: white; href="#">Update</a></li>
-			<li><a style="background: CadetBlue; color: white; href="#overlayPanel">Menu</a></li>
+			<li><a style="background: CadetBlue; color: white;" href="#">Update</a></li>
+			<li><a style="background: CadetBlue; color: white;" href="#overlayPanel">Menu</a></li>
 		</ul>
 		</div>	
 	</div>

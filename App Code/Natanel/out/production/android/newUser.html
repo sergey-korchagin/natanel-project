@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript" src="script.js"></script>
+<script language="javascript" src="onCreate.js"></script>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+
+
+<div data-role="page">
+	<div data-role="header" data-position = "fixed">
+			<h1>Welcomes User</h1>
+	</div>
+	
+  <div data-role="main" class="ui-content">
+    <form method="post">
+	
+      <label for="userMail">Email:</label>
+      <input type="email" name="userMail" id="userMail" placeholder="yourname@gov.il">
+	  <label for="userPassword">Password:</label>
+      <input type="password" name="userPassword" id="userPassword" placeholder="least 7 digits">
+	  <label for="userSubPassword">Submit password:</label>
+      <input type="password" name="userSubPassword" id="userSubPassword" placeholder="least 7 digits">
+	  <label for="userName">First Name</label>
+      <input type="text" name="userName" id="userName" placeholder="israel">
+	  <label for="userSecondName">Family:</label>
+      <input type="text" name="userSecondName" id="userSecondName" placeholder="israelov">
+	  <label for="userPhone">Office phone:</label>
+      <input type="tel" name="userPhone" id="userPhone" placeholder="020000000">
+	  <label for="userPhoto">Your Photo:</label>
+	  <input type="file" name="file" id="file" />
+	  <div data-role="navbar">
+      <ul>
+        <li><a style="background: CadetBlue; color: white;" href="#" class="ui-btn-a">Submit</a></li>
+      </ul>
+	</div>
+	  
+    </form>
+  </div>
+</div>
+
+
+</body>
+</head>
