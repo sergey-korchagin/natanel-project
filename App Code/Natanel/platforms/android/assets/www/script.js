@@ -1,25 +1,38 @@
 
+// $( document ).ready(function() {
+	
+	// client = new WindowsAzure.MobileServiceClient(
+    // "https://natanel.azure-mobile.net/",
+    // "mIStGsJbknpIIMIPWipAlqOnvbUSys14");
+	// });
 
 
-var admin = 'a@gov.il';
-var password = '12';
 //check if user exists
 function submitForm(){
 
+	client = new WindowsAzure.MobileServiceClient(
+    "https://natanel.azure-mobile.net/",
+    "mIStGsJbknpIIMIPWipAlqOnvbUSys14");
 var tmp = document.forms["login"]["fullname"].value;
 var tmp2 = document.forms["login"]["password"].value;
-if(tmp == admin && tmp2 == password){
+var tmp3= CryptoJS.MD5(tmp2).toString();
 
-window.location = "main.html"; 
+	client.getTable('Item').read({email:tmp,pwd:tmp3})
+		  .done(function(result) {
+				console.log(result);
+				if(result.length===1) {
+					window.location = "main.html";
+				}
+				else {
+					alert('user name or password is incorrect');
+				}
+			}, function(err) {
+				alert(err);
+				}
+			)
 
-document.forms["login"]["fullname"].value = '';
-document.forms["login"]["password"].value = '';
-	return false;
-	
-}
-else{
-	alert('user mail or password is incorrect');
-}	
+
+
 }
 
 
@@ -54,7 +67,10 @@ function close_window() {
 	var secName = document.forms["newUserForm"]["userSecondName"].value;				
 	var phone = document.forms["newUserForm"]["userPhone"].value;
 	
-	// if(mail.indexOf('@') <= 0){
+	
+	//Check input
+	
+	 //if(mail.indexOf('@') <= 0){
 		// alert('Incorrect email');
 	// }else if(mail.indexOf('gov.il')<=0){
 		// alert('only gov.il email');
@@ -65,13 +81,26 @@ function close_window() {
 	// }else if(!isFinite(String(phone)) || phone.length<9){
 		// alert('incorrect phone number');
 	// }else{
+		var hash_pass = CryptoJS.MD5(pwd).toString();
+		console.log(hash_pass);
 		 
 var client = new WindowsAzure.MobileServiceClient(
     "https://natanel.azure-mobile.net/",
     "mIStGsJbknpIIMIPWipAlqOnvbUSys14"
 );
-	var item = { email: mail, pwd: pwd, sub_pwd: subpwd, first_name: name, last_name: secName, phone: phone};
-client.getTable("Item").insert(item);
+	var item = { email: mail, pwd: hash_pass, first_name: name, last_name: secName, phone: phone};
+	client.getTable("Item").insert(item)
+	  .done(function(result) {
+		console.log(result);
+	    $(location).attr('href','userPage.html?email='+result.email+'&pass='+hash_pass);
+	  }, function(err) {
+		  alert(err);
+	  }
+	  )
 
 	
+	
+	
 }
+
+

@@ -1,23 +1,23 @@
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes.dex : \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\com\app\natanel\BuildConfig.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\com\app\natanel\CordovaApp.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\com\app\natanel\R$attr.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\com\app\natanel\R$drawable.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\com\app\natanel\R$string.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\com\app\natanel\R$xml.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\com\app\natanel\R.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$1.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$2.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$3.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$4$1.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$4.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$1.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$2.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$3.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$4.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$InAppBrowserClient.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowserDialog.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppChromeClient.class \
-C:\Users\serge_000\Desktop\Natanel\platforms\android\ant-build\dexedLibs\classes-d72b0a44fdd86aa38171ee1ab3931faa.jar \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes.dex : \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\com\app\natanel\BuildConfig.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\com\app\natanel\CordovaApp.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\com\app\natanel\R$attr.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\com\app\natanel\R$drawable.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\com\app\natanel\R$string.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\com\app\natanel\R$xml.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\com\app\natanel\R.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$1.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$2.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$3.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$4$1.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$4.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$1.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$2.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$3.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$4.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$InAppBrowserClient.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowserDialog.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppChromeClient.class \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\ant-build\dexedLibs\classes-7fb3f1bb00a06011bb1c713ce6aface5.jar \

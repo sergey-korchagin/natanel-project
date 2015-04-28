@@ -67,7 +67,10 @@ function close_window() {
 	var secName = document.forms["newUserForm"]["userSecondName"].value;				
 	var phone = document.forms["newUserForm"]["userPhone"].value;
 	
-	// if(mail.indexOf('@') <= 0){
+	
+	//Check input
+	
+	 //if(mail.indexOf('@') <= 0){
 		// alert('Incorrect email');
 	// }else if(mail.indexOf('gov.il')<=0){
 		// alert('only gov.il email');
