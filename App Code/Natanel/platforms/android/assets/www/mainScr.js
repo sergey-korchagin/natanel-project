@@ -7,5 +7,5 @@ $( document ).ready(function() {
 );
 
 //Get user data from service and show it 
-document.getElementById("mytext").value= 'test';
+//document.getElementById("mytext").value= 'test';
 });

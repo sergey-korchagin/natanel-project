@@ -62,6 +62,7 @@ C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\as
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\scrUsPage.js \
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\userPage.html \
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\users.html \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\utils.js \
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\img\logo.png \
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\plugins\com.microsoft.azure-mobile-services \
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\plugins\org.apache.cordova.inappbrowser \
