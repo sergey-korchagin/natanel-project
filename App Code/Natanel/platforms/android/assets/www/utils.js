@@ -22,3 +22,10 @@ function notEmpty(str) {
 	}
 	return false;
 }
+
+function userExit(){
+	
+	 ls = window.localStorage;
+	 ls.clear();
+	 $(location).attr('href', 'index.html');
+}
