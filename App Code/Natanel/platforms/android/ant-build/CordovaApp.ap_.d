@@ -57,6 +57,7 @@ C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\as
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\newUser.html \
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\phoneBook.html \
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\plugins \
+C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\pushNotification.js \
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\res \
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\script.js \
 C:\Users\serge_000\Desktop\natanel-project\App Code\Natanel\platforms\android\assets\www\scrUsPage.js \

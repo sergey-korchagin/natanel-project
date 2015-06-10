@@ -20,7 +20,6 @@ $(document).ready(function() {
 });
 
     function getData(username, passwd) {
-		console.log('22222222');
         client.getTable('Item').read({
                 email: username,
                 pwd: passwd
@@ -36,7 +35,6 @@ $(document).ready(function() {
                     document.getElementById("name").value = (result[0].first_name);
                     document.getElementById("lastname").value = result[0].last_name;
                     document.getElementById("phone").value = result[0].phone;
-					console.log('22222222');
                 }
             }, function(err) {
                 alert(err);

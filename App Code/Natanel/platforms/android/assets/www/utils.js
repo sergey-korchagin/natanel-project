@@ -29,3 +29,29 @@ function userExit(){
 	 ls.clear();
 	 $(location).attr('href', 'index.html');
 }
+
+function registrateMe () {
+	console.log('gcm reg attempt');
+	var pushNotification = window.plugins.pushNotification;  
+	 pushNotification.register( 
+		successHandler,
+		errorHandler, 
+		{ 'senderID':'917421012976', 'ecb':'onNotificationGCM' // callback function 
+		} );
+
+		function successHandler(res) {
+			console.log(res);
+			alert('succ');
+			alert(res);
+		};
+		function errorHandler(res) {
+			console.log(res);
+			alert('err');
+			alert(res);
+		}
+		
+		function onNotificationGCM(e) {
+			console.log(e);
+			alert(e);
+		}
+}
