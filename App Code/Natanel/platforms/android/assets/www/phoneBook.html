@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script language="javascript" src="script.js"></script>
-<script language="javascript" src="utils.js"></script>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+<script language="javascript" src="mainScr.js"></script>
+<script language="javascript" src="utils.js"></script>
+<script language="javascript" src="phoneBook.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
@@ -35,15 +41,7 @@
 	</div> 
 	
 	
-    <div data-role="collapsibleset" data-collapsed="true" data-collapsed-icon ="phone" data-expanded-icon = "phone">
-	  <div data-role="collapsible">
-		<h1>Phone number 1</h1>
-		<p>02-2583696</p>
-	  </div>
-	  <div data-role="collapsible">
-		<h1>Phone number 2</h1>
-		<p>03-6543112</p>
-	  </div>
+    <div data-role="collapsibleset" data-filter="true" data-collapsed="true" data-collapsed-icon ="phone" data-expanded-icon = "phone"  id="phoneBook">
 	</div>
 	
 	

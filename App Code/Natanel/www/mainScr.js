@@ -19,22 +19,20 @@ function getMessage(user){
         "mIStGsJbknpIIMIPWipAlqOnvbUSys14"
     );
 	client.getTable('users').read(
-	//{username: usr}
 	)
         .done(function(result) {
             console.log(result);
-               // if (result.length === 2 ) {
                     //Get user data from service and show it 
-					//while(result.length >=1){
+					
 						var i = 0;
 						for(i; i<result.length;i++){				
 					id = result[i].id;
 					var tmp = result[i].username +' say: '
 					var tmp1 = '<tr><td>'+tmp+'</td><td>'+result[i].messagetext+ '</td></tr>' 
 					$('#myTable').append(tmp1);
-                  //  document.getElementById("textarea-1").value = (result[1].username +': ' + result[1].messagetext );
+					
 					}
-             //   }
+       
         }, function(err) {
             alert(err);
         })
