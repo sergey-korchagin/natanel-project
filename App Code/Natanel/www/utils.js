@@ -30,6 +30,15 @@ function userExit(){
 	 $(location).attr('href', 'index.html');
 }
 
+function noPhone(){
+	$(location).attr('href', 'phoneBook.html');
+	alert('Message was sent');
+}
+
+function noUser(){
+	$(location).attr('href', 'users.html');
+	alert('Message was sent');
+}
 function registrateMe () {
 	console.log('gcm reg attempt');
 	var pushNotification = window.plugins.pushNotification;  
@@ -54,4 +63,5 @@ function registrateMe () {
 			console.log(e);
 			alert(e);
 		}
+		
 }

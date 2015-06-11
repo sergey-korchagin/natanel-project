@@ -26,10 +26,7 @@ function submitForm() {
     var tmp2 = document.forms["login"]["password"].value;
     var tmp3 = CryptoJS.MD5(tmp2).toString();
 
-
     validateUser(tmp, tmp3);
-
-
 }
 
 
