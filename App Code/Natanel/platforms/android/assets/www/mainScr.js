@@ -28,8 +28,11 @@ function getMessage(user){
 						for(i; i<result.length;i++){				
 					id = result[i].id;
 					var tmp = result[i].username +' say: '
-					var tmp1 = '<tr><td>'+tmp+'</td><td>'+result[i].messagetext+ '</td></tr>' 
+					var tmp1 = '<tr><td><b>'+tmp+'</b></td></tr>';
+					var tmp2 = '<tr><td><center>'+result[i].messagetext+'</center></td></tr>' 
 					$('#myTable').append(tmp1);
+					$('#myTable').append(tmp2);
+					
 					
 					}
        
