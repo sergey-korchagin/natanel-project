@@ -39,6 +39,12 @@ function noUser(){
 	$(location).attr('href', 'users.html');
 	alert('Message was sent');
 }
+
+function closeMsg(){
+$(location).attr('href', 'index.html');
+}
+
+
 function registrateMe () {
 	console.log('gcm reg attempt');
 	var pushNotification = window.plugins.pushNotification;  
@@ -65,3 +71,5 @@ function registrateMe () {
 		}
 		
 }
+
+

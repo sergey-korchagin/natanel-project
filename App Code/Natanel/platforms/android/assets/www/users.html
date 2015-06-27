@@ -26,22 +26,24 @@
       <input id="myFilter" data-type="search" placeholder = "Please enter user name">
     </form>
     <ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
-      <li><a href="#">Adele</a></li>
-      <li><a href="#">Agnes</a></li>
-      <li><a href="#">Albert</a></li>
-      <li><a href="#">Billy</a></li>
-      <li><a href="#">Bob</a></li>
-      <li><a href="#">Calvin</a></li>
-      <li><a href="#">Cameron</a></li>
-      <li><a href="#">Chloe</a></li>
-      <li><a href="#">Christina</a></li>
-      <li><a href="#">Diana</a></li>
-      <li><a href="#">Gabriel</a></li>
-      <li><a href="#">Glen</a></li>
-      <li><a href="#">Ralph</a></li>
-      <li><a href="#">Valarie</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Adele</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Agnes</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Albert</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Billy</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Bob</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Calvin</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Cameron</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Chloe</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Christina</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Diana</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Gabriel</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Glen</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Ralph</a></li>
+      <li><a href="#myPopupDialogMsg" data-rel="popup">Valarie</a></li>
     </ul>
   </div>
+  
+
   
   
   <div data-role="panel" id="overlayPanel" data-display="push"> 
@@ -66,6 +68,26 @@
 			</div>
 			<h6>We will check if user exists and contact you!</h6>
         <button data-theme="b" onClick='noUser()'>Send</button>
+      </div>
+
+      <div data-role="footer">
+        <h1>     </h1>
+      </div>
+    </div>
+	
+	    <div data-role="popup" id="myPopupDialogMsg" data-position-to="window">
+      <div data-role="header">
+	  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <h1>New Message:</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>Please enter your message text:</p>
+         <div data-role="fieldcontain">
+				<textarea name="textarea" id="textarea" ></textarea>		
+			</div>
+        <button data-theme="b" onclick = "closeMsg()">Send</button>
+			  
       </div>
 
       <div data-role="footer">
