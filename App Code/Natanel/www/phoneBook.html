@@ -35,7 +35,7 @@
 			<center><h2>Menu</h2></center>
 		<div data-role="controlgroup" data-type="vertical">
 		  <a href="#" class="ui-btn">Settings</a>
-		  <a href="#" class="ui-btn">Contact us</a>
+		  <a href="#myPopupDialogContact" data-rel="popup"class="ui-btn">Contact us</a>
 		<a href="#" class="ui-btn" onclick = "userExit()">Exit</a>
 		</div>	
 	</div> 
@@ -60,6 +60,27 @@
 			</div>
 			<h6>We will check phone number and contact you!</h6>
         <button data-theme="b" onClick="noPhone()">Send</button>
+      </div>
+
+      <div data-role="footer">
+        <h1>     </h1>
+      </div>
+    </div
+	
+		  
+	  <div data-role="popup" id="myPopupDialogContact" data-position-to="window">
+      <div data-role="header">
+	  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <h1>Contact us:</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>Please enter your  text:</p>
+         <div data-role="fieldcontain">
+				<textarea name="textarea" id="textarea" ></textarea>		
+			</div>
+        <button data-theme="b" onclick = "closeMsg()">Send</button>
+			  
       </div>
 
       <div data-role="footer">
